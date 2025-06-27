@@ -1,0 +1,89 @@
+- color: Red
+  effects:
+    - Lightning Pots in possession at start of expedition
+    - Wraith Calling Bell in possession at start of expedition
+    - Changes compatible armament's skill to Flaming Strike at start of expedition
+
+- color: Red
+  effects:
+    - "[Revenant] Expend own HP to fully heal nearby allies when activating Art"
+    - HP Restoration upon Whip Attacks
+    - Holy Attack Power Up +1
+
+- color: Red
+  effects:
+    - Character Skill Cooldown Reduction +2
+    - Physical Attack Up +2
+
+- color: Red
+  effects:
+    - 
+
+- color: Red
+  effects:
+    - Stamina Recovers with Each Successful Attack
+    - Dexterity +1
+    - Lightning Attack Power Up +2
+
+- color: Red
+  effects:
+    - Improved Invisibility Sorcery
+    - Dexterity +2
+
+- color: Red
+  effects:
+    - Improved Heavy Thrusting Sword Attach Power
+
+- color: Red
+  effects:
+    - Improved Attack Power with 3+ Axes Equipped
+    - Improved Godslayer Incantations
+    - Changes compatible armament's skill to Chilling Mist at start of expedition
+
+- color: Red
+  effects:
+    - "[Raider] Damage taken while using Character Skill improves attack power and stamina"
+    - Strength +3
+    - Magic Attack Power Up +1
+
+- color: Red
+  effects:
+    - "[Revenant] Trigger ghostflame explosion during Ultimate Art activation"
+    - Changes compatible armament's skill to Hoarfrost
+
+- color: Yellow
+  effects:
+    - Starting armament inflics frost
+    - Magic Attack Power Up +1
+
+- color: Yellow
+  effects:
+    - "[Ironeye] +1 additional Character Skill use"
+    - Starting armament inflicts blood loss
+
+- color: Yellow
+  effects:
+    - Improved Ailment Resistance
+    - Change Compatible Armament's Skill to Chilling Mist at Start of Expedition
+
+- color: Green
+  effects:
+    - Improved Hammer Attack Power
+    - Vigor +2
+    - Endurance +1
+
+- color: Green
+  effects:
+    - "[Ironeye] Art Charge Activation Adds Poison Effect"
+    - Arcane +3
+
+- color: Green
+  effects:
+    - Starting armament deals lightning damage
+    - Attack power up when facing poison-afflicted enemy
+
+- color: Green
+  effects:
+    - Draw Enemy Attention while Guarding
+    - Switching Weapons Adds an Affinity Attack
+    - Arcane +3
