@@ -103,7 +103,7 @@ class Relic:
         with open("unique_relics.yml", "r") as f:
             unique_relics = yaml.safe_load(f)
         
-        for color, list_of_names in unique_relics:
+        for color, list_of_names in unique_relics.items():
             if name in list_of_names:
                 return color
 
@@ -116,8 +116,16 @@ class Relic:
 
 
 if __name__ == "__main__":
-    image = Image.open("sandbox/scrap_inventory_from_game/relics/56.png")
-    r56 = Relic.from_screenshot(image)
-    image = Image.open("sandbox/scrap_inventory_from_game/relics/72.png")
-    r72 = Relic.from_screenshot(image)
-    print(yaml.dump([asdict(r56), asdict(r72)]))
+
+    # Quick and dirty way to build my full relic_inventory.yml
+
+    inventory = []
+
+    for i in range(88):
+        image = Image.open(f"sandbox/scrap_inventory_from_game/relics/{i}.png")
+        relic = Relic.from_screenshot(image)
+        if relic:
+            inventory.append(asdict(relic))
+
+    with open('relic_inventory.yml', 'w') as f:
+        f.write(yaml.dump(inventory))
