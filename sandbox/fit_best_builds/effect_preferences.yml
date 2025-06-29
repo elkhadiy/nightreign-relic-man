@@ -13,3 +13,20 @@ Ironeye:
   Arcane +2: 55
   Character Skill Cooldown Reduction +1: 20
   Arcane +1: 20
+Wylder:
+  "[Wylder] +1 additional Character Skill use": 100
+  "[Wylder] Art activation spreads fire in area": 100
+  Stamina recovers with each successful attack: 70
+  Vigor +2: 70
+  Poise +2: 70
+  Partial HP Restoration upon Post-Damage Attacks: 80
+  Taking attacks improves attack power: 80
+  "[Wylder] Follow up attacks possible when using character skill (greatsword only)": 100
+  HP restoration after Greatsword attacks: 80
+  Improve Greatsword attack power: 80
+  Physical Attack Up +2: 80
+  Physical Attack Up +1: 70
+  Physical Attack Up: 60
+  Improved stance breaking when two handing: 70
+  Stamina Recovers with each successful attack: 70
+  Change compatible armament skill to Quickstep at start of expedition: 70

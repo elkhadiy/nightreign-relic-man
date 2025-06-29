@@ -1,9 +1,40 @@
+- color: Green
+  effects:
+  - Changes compatible armament's skill to Sacred Blade
+  - Poise +1
+  name: Polished Tranquil Scene
+- color: Green
+  effects:
+  - Bewitching Branches in possession at start of expedition
+  - Changes compatible armament's skill to Determination at start of expedition
+  name: Polished Tranquil Scene
+- color: Blue
+  effects:
+  - '[Revenant] Trigger ghostflame explosion during Ultimate Art activation'
+  - Starting armament deals magic damage
+  name: Polished Drizzly Scene
+- color: Red
+  effects:
+  - FP Restoration upon Spear Attacks
+  - Holy Water Pots in possession at start of expedition
+  - Attack power up when facing scarlet rot-afflicted enemy
+  name: Grand Burning Scene
+- color: Red
+  effects:
+  - Rune discount for shop purchases while on expedition
+  - Endurance +2
+  name: Polished Burning Scene
 - color: Red
   effects:
   - Lightning Pots in possession at start of expedition
   - Wraith Calling Bell in possession at start of expedition
   - Changes compatible armament's skill to Flaming Strike at start of expedition
   name: Grand Burning Scene
+- color: Red
+  effects:
+  - '[Executor] Roaring restores HP while Art is active'
+  - Improved Poison Resistance
+  name: Polished Burning Scene
 - color: Red
   effects:
   - '[Revenant] Expend own HP to fully heal nearby allies when activating Art'
@@ -52,11 +83,11 @@
 - color: Red
   effects:
   - Draw enemy attention while guarding
-  - "Changes compatible armament\u2019s skill to Prayerful Strike at start of expedition"
+  - Changes compatible armament's skill to Prayerful Strike at start of expedition
   name: Polished Burning Scene
 - color: Red
   effects:
-  - '[Executor) Character Skill Boosts Attack but Attacking Drains HP'
+  - '[Executor] Character Skill Boosts Attack but Attacking Drains HP'
   - Arcane +3
   name: Polished Burning Scene
 - color: Red
@@ -84,7 +115,7 @@
 - color: Red
   effects:
   - '[Revenant] Trigger ghostflame explosion during Ultimate Art activation'
-  - "Changes compatible armament\u2019s skill to Hoarfrost Stomp at start of expedition"
+  - Changes compatible armament's skill to Hoarfrost Stomp at start of expedition
   name: Polished Burning Scene
 - color: Red
   effects:
@@ -105,6 +136,24 @@
   name: Grand Burning Scene
 - color: Red
   effects:
+  - Starting armament deals lightning damage
+  - Changes compatible armament's skill to Lightning Slash at start of expedition
+  name: Polished Burning Scene
+- color: Red
+  effects:
+  - Intelligence +2
+  - Poise +2
+  - Physical Attack Up +1
+  name: Grand Burning Scene
+- color: Red
+  effects:
+  - '[Executor] While Character Skill is active, unlocking use of cursed sword restores
+    HP'
+  - Endurance +3
+  - Lightning Attack Power Up +2
+  name: Grand Burning Scene
+- color: Red
+  effects:
   - '[Wylder] Follow-up attacks possible when using Character Skill (greatsword only)'
   - Physical Attack Up
   name: Slate Whetstone
@@ -117,7 +166,7 @@
 - color: Blue
   effects:
   - Improved Initial Standard Attack
-  - "Changes compatible armament\u2019s skill to Determination at start of expedition"
+  - Changes compatible armament's skill to Determination at start of expedition
   - Improved Poise & Damage Negation When Knocked Back by Damage
   name: Grand Drizzly Scene
 - color: Blue
@@ -128,18 +177,18 @@
 - color: Blue
   effects:
   - '[Guardian] Increased duration for Character Skill'
-  - "Changes compatible armament\u2019s skill to Seppuku at start of expedition"
+  - Changes compatible armament's skill to Seppuku at start of expedition
   name: Polished Drizzly Scene
 - color: Blue
   effects:
   - '[Wylder] Art activation spreads fire in area'
-  - "Changes compatible armament\u2019s skill to Rain of Arrows at start of expedition"
+  - Changes compatible armament's skill to Rain of Arrows at start of expedition
   - Character Skill Cooldown Reduction +3
   name: Grand Drizzly Scene
 - color: Blue
   effects:
   - Starting armament deals magic damage
-  - "Changes compatible armament\u2019s skill to Lightning Slash at start of expedition"
+  - Changes compatible armament's skill to Lightning Slash at start of expedition
   name: Polished Drizzly Scene
 - color: Blue
   effects:
@@ -176,6 +225,17 @@
   name: Grand Drizzly Scene
 - color: Blue
   effects:
+  - '[Recluse] Collecting affinity residue activates Terra Magica'
+  - HP Restoration upon Thrusting Counterattack
+  - Rune discount for shop purchases while on expedition
+  name: Grand Drizzly Scene
+- color: Blue
+  effects:
+  - HP Restoration upon Dagger Attacks
+  - Lightning Attack Power Up
+  name: Polished Drizzly Scene
+- color: Blue
+  effects:
   - Improved Critical Hits +1
   - Art gauge fills moderately upon critical hit
   - Critical Hit Boosts Stamina Recovery Speed
@@ -188,7 +248,7 @@
 - color: Yellow
   effects:
   - HP Restoration upon Flail Attacks
-  - "Changes compatible armament\u2019s skill to Poisonous Mist at start of expedition"
+  - Changes compatible armament's skill to Poisonous Mist at start of expedition
   name: Polished Luminous Scene
 - color: Yellow
   effects:
@@ -218,7 +278,7 @@
   name: Polished Luminous Scene
 - color: Yellow
   effects:
-  - '[Executor) Roaring restores HP while Art s active'
+  - '[Executor] Roaring restores HP while Art is active'
   - FP Restoration upon Flail Attacks
   - Holy Attack Power Up +2
   name: Grand Luminous Scene
@@ -274,6 +334,22 @@
   name: Polished Luminous Scene
 - color: Yellow
   effects:
+  - Improved Godslayer Incantations
+  - Starlight Shards in possession at start of expedition
+  name: Polished Luminous Scene
+- color: Yellow
+  effects:
+  - HP Restoration upon Spear Attacks
+  - Changes compatible armament's skill to Prayerful Strike at start of expedition
+  name: Polished Luminous Scene
+- color: Yellow
+  effects:
+  - Improved Bestial Incantations
+  - Vigor +1
+  - Intelligence +1
+  name: Grand Luminous Scene
+- color: Yellow
+  effects:
   - Improved Critical Hits
   name: Delicate Luminous Scene
 - color: Yellow
@@ -311,7 +387,7 @@
 - color: Green
   effects:
   - '[Raider] Duration of Ultimate Art extended'
-  - "Changes compatible armament\u2019s skill to Poison Moth Flight at start of expedition"
+  - Changes compatible armament's skill to Poison Moth Flight at start of expedition
   name: Polished Tranquil Scene
 - color: Green
   effects:
@@ -321,7 +397,7 @@
   name: Grand Tranquil Scene
 - color: Green
   effects:
-  - '[Executor) Character Skill Boosts Attack but Attacking Drains HP'
+  - '[Executor] Character Skill Boosts Attack but Attacking Drains HP'
   - Starlight Shards in possession at start of expedition
   name: Polished Tranquil Scene
 - color: Green
@@ -356,7 +432,7 @@
 - color: Green
   effects:
   - Improved Whip Attack Power
-  - "Changes compatible armament\u2019s skill to Thunderbolt at start of expedition"
+  - Changes compatible armament's skill to Thunderbolt at start of expedition
   name: Polished Tranquil Scene
 - color: Green
   effects:
@@ -381,6 +457,10 @@
   name: Polished Tranquil Scene
 - color: Green
   effects:
+  - HP Restoration upon Twinblade Attacks
+  name: Delicate Tranquil Scene
+- color: Green
+  effects:
   - Improved Hammer Attack Power
   - Vigor +2
   - Endurance +1
@@ -393,7 +473,7 @@
   name: Grand Tranquil Scene
 - color: Green
   effects:
-  - '[Executor) Character Skill Boosts Attack but Attacking Drains HP'
+  - '[Executor] Character Skill Boosts Attack but Attacking Drains HP'
   - Vigor +3
   - Faith +1
   name: Grand Tranquil Scene
