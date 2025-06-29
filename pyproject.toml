@@ -1,0 +1,17 @@
+[project]
+name = "nightreign-relic-man"
+version = "0.1.0"
+description = "Elden Ring Nightreign relic manager/helper tool"
+readme = "README.md"
+authors = [
+    { name = "Yassine El Khadiri", email = "yassineelkhadiri@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+nightreign-relic-man = "nightreign_relic_man:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
