@@ -42,7 +42,7 @@ def grab_relic(filename = f"{uuid.uuid4()}.png"):
         int(screen_size.width * width_rel), int(screen_size.height * height_rel)
     ))
 
-    im.save(filename)
+    im.save(filename, dpi=(300, 300))
 
 
 if __name__ == "__main__":
@@ -54,6 +54,6 @@ if __name__ == "__main__":
     order_relics_by_color()
     goto_first_relic()
 
-    for i in range(5):
+    for i in range(14*8):
         grab_relic(f"relics/{i}.png")
         pydirectinput.press("right")

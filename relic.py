@@ -27,44 +27,45 @@ class Relic:
         """
         # Processing the image a bit so that the OCR returns an empty string for all cases
         # when nothing is there instead of hallucinating characters
-        image = cv2.cvtColor(np.array(screenshot), cv2.COLOR_BGR2GRAY)
-        _, image = cv2.threshold(image, 99, 255, cv2.THRESH_BINARY)
+        image = screenshot.resize((screenshot.width * 10, screenshot.height * 10))
+        image = cv2.cvtColor(np.array(image), cv2.COLOR_BGR2GRAY)
+        _, image = cv2.threshold(image, 75, 255, cv2.THRESH_BINARY)
         image = Image.fromarray(image)
 
         # Process the relic name first,
         # if nothing was found it means the slot was empty
         # so we return None
         relic_name_rect = TextZone(
-            0 / 846, 5 / 306,
-            846 / 846, 55 / 306,
+            0 / 846, 15 / 306,
+            846 / 846, 45 / 306,
             image.width, image.height
         )
         relic_name_im = image.crop(relic_name_rect.pil_crop())
-        relic_name = tesserocr.image_to_text(relic_name_im, path=TESSDATA_PATH, psm=6).replace('\n', ' ').strip()
+        relic_name = cls.image2text(relic_name_im)
 
         if not relic_name:
             return None
         
         # We know the relic color from the name
-        color = Relic.name2color(relic_name)
+        color = cls.name2color(relic_name)
 
         # Lastly let's collect our effects in a list
         effects = []
 
         first_effect_rect = TextZone(
-            65 / 846, 61 / 306,
+            68 / 846, 61 / 306,
             781 / 846, 80 / 306,
             image.width, image.height
         )
 
         second_effect_rect = TextZone(
-            65 / 846, 141 / 306,
+            68 / 846, 141 / 306,
             781 / 846, 80 / 306,
             image.width, image.height
         )
 
         third_effect_rect = TextZone(
-            65 / 846, 221 / 306,
+            68 / 846, 221 / 306,
             781 / 846, 80 / 306,
             image.width, image.height
         )
@@ -73,9 +74,9 @@ class Relic:
         second_effect_im = image.crop(second_effect_rect.pil_crop())
         third_effect_im = image.crop(third_effect_rect.pil_crop())
 
-        first_effect = tesserocr.image_to_text(first_effect_im, path=TESSDATA_PATH, psm=6).replace('\n', ' ').strip()
-        second_effect = tesserocr.image_to_text(second_effect_im, path=TESSDATA_PATH, psm=6).replace('\n', ' ').strip()
-        third_effect = tesserocr.image_to_text(third_effect_im, path=TESSDATA_PATH, psm=6).replace('\n', ' ').strip()
+        first_effect = cls.image2text(first_effect_im)
+        second_effect = cls.image2text(second_effect_im)
+        third_effect = cls.image2text(third_effect_im)
 
         if first_effect:
             effects.append(first_effect)
@@ -85,6 +86,12 @@ class Relic:
             effects.append(third_effect)
 
         return cls(relic_name, color, effects)
+
+    @staticmethod
+    def image2text(image):
+        return tesserocr.image_to_text(image, path=TESSDATA_PATH, psm=6) \
+                        .translate(str.maketrans({'\n': ' ', "’": "'"})) \
+                        .strip()
 
     @staticmethod
     def name2color(name):
@@ -121,8 +128,8 @@ if __name__ == "__main__":
 
     inventory = []
 
-    for i in range(88):
-        image = Image.open(f"sandbox/scrap_inventory_from_game/relics/{i}.png")
+    for i in range(14*8):
+        image = Image.open(f"relics/{i}.png")
         relic = Relic.from_screenshot(image)
         if relic:
             inventory.append(asdict(relic))
