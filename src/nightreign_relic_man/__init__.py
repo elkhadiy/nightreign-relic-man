@@ -1,2 +1,2 @@
-def main() -> None:
-    print("Hello from nightreign-relic-fit!")
+from nightreign_relic_man.automation import collect_relic_screenshots
+from nightreign_relic_man.manager import build_inventory_from_screenshots

@@ -1,5 +1,4 @@
 pyautogui
 pydirectinput
 opencv-python
-numpy
 https://github.com/simonflueckiger/tesserocr-windows_build/releases/download/tesserocr-v2.8.0-tesseract-5.5.0/tesserocr-2.8.0-cp310-cp310-win_amd64.whl

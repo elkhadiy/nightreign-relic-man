@@ -3,10 +3,10 @@ import numpy as np
 import tesserocr
 import yaml
 
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from PIL import Image
 
-from utils import TextZone
+from nightreign_relic_man.manager.utils import TextZone
 
 
 TESSDATA_PATH='ressources/tesserocr/tessdata-4.1.0'
@@ -120,19 +120,3 @@ class Relic:
         They should be considered to be different by collections that use hashing.
         """
         return id(self)
-
-
-if __name__ == "__main__":
-
-    # Quick and dirty way to build my full relic_inventory.yml
-
-    inventory = []
-
-    for i in range(14*8):
-        image = Image.open(f"relics/{i}.png")
-        relic = Relic.from_screenshot(image)
-        if relic:
-            inventory.append(asdict(relic))
-
-    with open('relic_inventory.yml', 'w') as f:
-        f.write(yaml.dump(inventory))

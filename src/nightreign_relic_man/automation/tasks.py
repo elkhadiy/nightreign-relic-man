@@ -43,17 +43,3 @@ def grab_relic(filename = f"{uuid.uuid4()}.png"):
     ))
 
     im.save(filename, dpi=(300, 300))
-
-
-if __name__ == "__main__":
-    
-    print("You have 3 seconds to focus the game!")
-    time.sleep(2)
-
-    goto_relic_rite()
-    order_relics_by_color()
-    goto_first_relic()
-
-    for i in range(14*8):
-        grab_relic(f"relics/{i}.png")
-        pydirectinput.press("right")

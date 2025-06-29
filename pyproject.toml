@@ -7,11 +7,21 @@ authors = [
     { name = "Yassine El Khadiri", email = "yassineelkhadiri@gmail.com" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "opencv-python>=4.11.0.86",
+    "pyautogui>=0.9.54",
+    "pydirectinput>=1.0.4",
+    "pyyaml>=6.0.2",
+    "tesserocr",
+]
 
 [project.scripts]
-nightreign-relic-man = "nightreign_relic_man:main"
+collect-relic-screenshots = "nightreign_relic_man:collect_relic_screenshots"
+build-inventory = "nightreign_relic_man:build_inventory_from_screenshots"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv.sources]
+tesserocr = { url = "https://github.com/simonflueckiger/tesserocr-windows_build/releases/download/tesserocr-v2.8.0-tesseract-5.5.0/tesserocr-2.8.0-cp310-cp310-win_amd64.whl" }
